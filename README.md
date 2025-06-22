@@ -1,4 +1,4 @@
-# Quiz FrontEnd @
+# Quiz Mobile APP 2 @
 
 Este é um projeto de um quiz interativo desenvolvido em HTML, CSS e JavaScript. O objetivo do quiz é testar os conhecimentos dos usuários sobre o segundo bimestre de FrontEnd.
 
