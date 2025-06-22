@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Aplicativo Mobile 2</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center p-4">
+  <div class="container mx-auto max-w-2xl">
+    <h1 class="text-3xl md:text-4xl font-bold text-center mb-6 md:mb-8">Quiz FrontEnd 2</h1>
+    <div id="quiz-container" class="bg-gray-800 rounded-lg shadow-lg p-6 md:p-8">
+      <div id="indicador-progresso" class="text-right text-sm text-gray-400 mb-4"></div>
+      <div id="container-pergunta" class="mb-6">
+        <!-- Pergunta será carregada aqui -->
+      </div>
+      <div id="container-opcoes" class="space-y-3">
+        <!-- Opções serão carregadas aqui -->
+      </div>
+      <div id="feedback" class="mt-6 text-center font-semibold feedback-oculto">
+        <!-- Feedback será exibido aqui -->
+      </div>
+      <div class="mt-6 flex flex-col md:flex-row gap-3">
+        <button id="botao-voltar" class="w-full md:w-1/2 bg-gray-600 hover:bg-gray-500 text-white py-2 px-4 rounded hidden transition-opacity duration-300">
+          Voltar
+        </button>
+        <button id="botao-proximo" class="w-full md:w-1/2 bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded hidden transition-opacity duration-300">
+          Próxima Pergunta
+        </button>
+      </div>
+      <div id="container-pontuacao" class="mt-6 text-center hidden">
+        <p id="pontuacao-final" class="text-xl font-bold mb-4"></p>
+        <button id="botao-reiniciar" class="bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded transition-colors duration-200">
+          Reiniciar Quiz
+        </button>
+      </div>
+    </div>
+    <div class="text-center mt-8 text-gray-500 text-sm">
+      Desenvolvido por: Cadu Kar Alho
+    </div>
+  </div>
+
+  <script src="js/script.js" defer></script>
+</body>
+
+</html>
