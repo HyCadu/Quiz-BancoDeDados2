@@ -258,5 +258,68 @@
     "answer": "e",
     "answer_text": "Efetuar backup na nuvem periodicamente, sem manter o acesso disponível.",
     "explanation": "Evita que o ransomware acesse os dados, mantendo o backup seguro."
-  }
-]
+  },{
+    "question": "Qual comando resolve o problema de inconsistência no backup do banco rh_interno, garantindo integridade, triggers, eventos e execução silenciosa?",
+    "options": {
+      "a": "mysqldump rh_interno -R -E > rh_interno.sql",
+      "b": "mysqldump rh_interno --lock-tables --skip-comments > rh_interno.sql",
+      "c": "mysqldump rh_interno -R -E --lock-all-tables > rh_interno.sql",
+      "d": "mysqldump rh_interno --routines > rh_interno.sql",
+      "e": "mysqldump rh_interno --no-data -R -E --lock-all-tables > rh_interno.sql"
+    },
+    "answer": "c",
+    "answer_text": "mysqldump rh_interno -R -E --lock-all-tables > rh_interno.sql",
+    "explanation": "Esse comando assegura consistência dos dados, inclusão de triggers e eventos e evita mensagens na tela."
+  },
+  {
+    "question": "Qual tipo de backup é mais adequado para manter dados protegidos em tempo real em bancos ativos?",
+    "options": {
+      "a": "Backup completo feito com o banco de dados desligado (backup off-line), salvo em dispositivo externo todas as noites.",
+      "b": "Replicação direta de arquivos de tabelas em local remoto, sem uso de log de transações.",
+      "c": "Backup lógico incremental, com exportação realizada manualmente em horários predefinidos.",
+      "d": "Backup on-line dinâmico e automatizado, com suporte à operação simultânea do banco em produção.",
+      "e": "Backup periódico de arquivos delimitados, armazenados semanalmente em fita."
+    },
+    "answer": "d",
+    "answer_text": "Backup on-line dinâmico e automatizado, com suporte à operação simultânea do banco em produção.",
+    "explanation": "Esse tipo de backup atende à necessidade de proteção contínua dos dados sem afetar o banco ativo."
+  },
+  {
+    "question": "Qual estratégia de backup atende melhor aos objetivos de redundância, controle, integridade e eficiência após falha crítica?",
+    "options": {
+      "a": "Executar backup lógico completo diariamente durante os horários de maior tráfego, com logs baseados em instruções SQL.",
+      "b": "Implementar backup off-line físico fora do ambiente de produção, seguido de backup lógico armazenado em fita magnética.",
+      "c": "Aplicar uma política híbrida, com backup completo programado, backup incremental com logs binários e uso de servidor replicado para redundância.",
+      "d": "Agendar backup físico diretamente no servidor principal, durante períodos de operações críticas.",
+      "e": "Efetuar backup lógico incremental, utilizando logs baseados em linhas SQL, sem replicação ou redundância externa."
+    },
+    "answer": "c",
+    "answer_text": "Aplicar uma política híbrida, com backup completo programado, backup incremental com logs binários e uso de servidor replicado para redundância.",
+    "explanation": "A política híbrida reúne os requisitos de segurança, integridade, e controle de modificações com alta disponibilidade."
+  },
+  {
+    "question": "Qual abordagem garante continuidade e integridade durante rotinas de backup sem afetar o banco principal?",
+    "options": {
+      "a": "Realizar backups físicos diretamente no servidor principal ativo, agendando-os para horários de menor uso e desativando temporariamente os arquivos de log binário.",
+      "b": "Realizar backups lógicos incrementais diretamente no servidor principal, com logs desabilitados para evitar conflitos de escrita durante a gravação.",
+      "c": "Implementar um backup off-line completo baseado em instruções SQL, com uso de compactação para acelerar o processo.",
+      "d": "Executar backups on-line diretamente no servidor principal, com aplicação de bloqueios para garantir consistência, sem usar replicação.",
+      "e": "Utilizar um servidor secundário replicado (slave) para executar o backup on-line nesse servidor, mantendo o serviço ativo no principal e assegurando cópias consistentes em tempo real."
+    },
+    "answer": "e",
+    "answer_text": "Utilizar um servidor secundário replicado (slave) para executar o backup on-line nesse servidor, mantendo o serviço ativo no principal e assegurando cópias consistentes em tempo real.",
+    "explanation": "Essa abordagem evita impacto na produção e garante cópias consistentes por meio da replicação."
+  },
+  {
+    "question": "Sobre boas práticas de backup em MySQL com ferramentas nativas, qual é a sequência correta das afirmações?",
+    "options": {
+      "a": "V - F - V - V - V",
+      "b": "F - V - F - F - F",
+      "c": "V - V - V - F - F",
+      "d": "F - V - F - V - F",
+      "e": "V - F - V - F - V"
+    },
+    "answer": "a",
+    "answer_text": "V - F - V - V - V",
+    "explanation": "A sequência correta representa o uso adequado do mysqldump, integridade de cópias, desativação do serviço para cópia física e uso de log binário para backups incrementais e rastreamento."
+  }]
