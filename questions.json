@@ -1,591 +1,262 @@
 [
   {
-    "question": "Qual widget é usado para entrada de texto simples em Flutter?",
+    "question": "Como se chama a linguagem de Banco de Dados para a criação e modificação das tabelas?",
     "options": {
-      "a": "Checkbox",
-      "b": "Radio",
-      "c": "TextField",
-      "d": "DatePicker"
-    },
-    "answer": "c",
-    "answer_text": "TextField",
-    "explanation": "O widget TextField é utilizado para entrada de texto simples em Flutter."
-  },
-  {
-    "question": "O que o widget TextFormField oferece a mais em relação ao TextField?",
-    "options": {
-      "a": "Rolagem automática",
-      "b": "Seleção de múltiplas opções",
-      "c": "Exibição de datas",
-      "d": "Suporte a validação e integração com formulários"
+      "a": "DML (Linguagem de Manipulação de Dados).",
+      "b": "SSL (Linguagem de Segurança de Dados).",
+      "c": "WIFI (Linguagem de Dados Sem Fio).",
+      "d": "DDL (Linguagem de Definição de Dados).",
+      "e": "DLC (Linguagem de Cálculo de Dados)."
     },
     "answer": "d",
-    "answer_text": "Suporte a validação e integração com formulários",
-    "explanation": "TextFormField permite validação e integração com formulários, além das funcionalidades do TextField."
+    "answer_text": "DDL (Linguagem de Definição de Dados).",
+    "explanation": "A Linguagem de Definição é a utilizada para criação e modificação das tabelas."
   },
   {
-    "question": "Qual widget é ideal para selecionar uma opção entre várias em um grupo?",
+    "question": "O que são Constraints?",
     "options": {
-      "a": "Checkbox",
-      "b": "Radio",
-      "c": "TextField",
-      "d": "DatePicker"
+      "a": "Comandos para fusão de duas ou mais tabelas na consulta.",
+      "b": "Restrições estabelecidas em uma coluna.",
+      "c": "Dados pré-definidos para data e hora.",
+      "d": "Recurso de atualização de dados de um campo.",
+      "e": "Implementação de performance no Banco de Dados."
     },
     "answer": "b",
-    "answer_text": "Radio",
-    "explanation": "O widget Radio permite selecionar apenas uma opção em um grupo."
+    "answer_text": "Restrições estabelecidas em uma coluna.",
+    "explanation": "As Constraints criam as restrições para uma tabela."
   },
   {
-    "question": "O widget Checkbox é usado para:",
+    "question": "Qual a diferença entre Primary Key e Foreign Key?",
     "options": {
-      "a": "Seleção de uma única opção",
-      "b": "Entrada de texto longo",
-      "c": "Seleção de múltiplas opções",
-      "d": "Exibição de uma lista suspensa"
+      "a": "Primary Key é sempre a primeira coluna de uma tabela e a Foreign Key a última.",
+      "b": "Primary Key é a senha de segurança primária do Banco de Dados e Foreign Key é a senha exportada.",
+      "c": "Primary key são os dados importados e Foreign Key os dados exportados.",
+      "d": "Primary Key é utilizada como índice da tabela e Foreign Key é utilizada para relacionamento entre tabelas.",
+      "e": "Primary Key é utilizada apenas para caracteres de texto e Foreign Key para números nos valores dos dados."
+    },
+    "answer": "d",
+    "answer_text": "Primary Key é utilizada como índice da tabela e Foreign Key é utilizada para relacionamento entre tabelas.",
+    "explanation": "Essas são as utilizações exatas para Primary e Foreign Key."
+  },
+  {
+    "question": "Qual a função de Identity ou Auto Increment?",
+    "options": {
+      "a": "Fazer o relacionamento entre duas tabelas.",
+      "b": "Gerar a numeração automática das linhas.",
+      "c": "Fazer a validação dos dados das colunas.",
+      "d": "Realizar as rotinas automáticas de manutenção de Banco de Dados.",
+      "e": "Armazenar números com mais de três casas decimais."
+    },
+    "answer": "b",
+    "answer_text": "Gerar a numeração automática das linhas.",
+    "explanation": "A Identity ou Auto Increment geram a numeração automática de linhas."
+  },
+  {
+    "question": "O que ocorre quando se utiliza o parâmetro Not Null na construção das colunas?",
+    "options": {
+      "a": "Impede a atualização de valor.",
+      "b": "Permite apenas caracteres de texto.",
+      "c": "Atualiza sempre para a data atual.",
+      "d": "Não permite números negativos.",
+      "e": "Impede que cadastre um campo vazio."
+    },
+    "answer": "e",
+    "answer_text": "Impede que cadastre um campo vazio.",
+    "explanation": "Através Not Null o campo não pode ficar vazio, tendo de ser preenchido."
+  },
+  {
+    "question": "Qual comando atende todos os critérios de consistência e integridade em backup MySQL?",
+    "options": {
+      "a": "mysqldump rh_interno -R -E > rh_interno.sql",
+      "b": "mysqldump rh_interno --lock-tables --skip-comments > rh_interno.sql",
+      "c": "mysqldump rh_interno -R -E --lock-all-tables > rh_interno.sql",
+      "d": "mysqldump rh_interno --routines > rh_interno.sql",
+      "e": "mysqldump rh_interno --no-data -R -E --lock-all-tables > rh_interno.sql"
     },
     "answer": "c",
-    "answer_text": "Seleção de múltiplas opções",
-    "explanation": "Checkbox permite marcar várias opções simultaneamente."
+    "answer_text": "mysqldump rh_interno -R -E --lock-all-tables > rh_interno.sql",
+    "explanation": "Garante consistência, triggers, eventos e redirecionamento silencioso com integridade."
   },
   {
-    "question": "Qual propriedade do DropdownButton define as opções exibidas?",
+    "question": "Qual o tipo de backup ideal para banco em produção e com alta demanda?",
     "options": {
-      "a": "items",
-      "b": "value",
-      "c": "onChanged",
-      "d": "hint"
+      "a": "Backup completo feito com o banco de dados desligado.",
+      "b": "Replicação direta de arquivos de tabelas em local remoto.",
+      "c": "Backup lógico incremental com exportação manual.",
+      "d": "Backup on-line dinâmico e automatizado.",
+      "e": "Backup periódico de arquivos delimitados em fita."
+    },
+    "answer": "d",
+    "answer_text": "Backup on-line dinâmico e automatizado.",
+    "explanation": "Permite operação simultânea e evita prejuízos com perda de dados em tempo real."
+  },
+  {
+    "question": "Qual estratégia de backup é mais adequada para restaurar grandes volumes com mínima interrupção?",
+    "options": {
+      "a": "Backup lógico completo durante tráfego intenso.",
+      "b": "Backup físico off-line mais backup lógico em fita.",
+      "c": "Política híbrida com backup completo, incremental e replicação.",
+      "d": "Backup físico no servidor principal durante operação crítica.",
+      "e": "Backup lógico incremental sem replicação."
+    },
+    "answer": "c",
+    "answer_text": "Política híbrida com backup completo, incremental e replicação.",
+    "explanation": "Combina integridade, eficiência e redundância para grandes volumes."
+  },
+  {
+    "question": "Como realizar backup sem afetar usuários e com integridade garantida?",
+    "options": {
+      "a": "Backups físicos no servidor principal com log binário desativado.",
+      "b": "Backups lógicos incrementais com logs desativados.",
+      "c": "Backup off-line completo com compactação.",
+      "d": "Backups on-line com bloqueios no servidor principal.",
+      "e": "Backup on-line em servidor secundário replicado."
+    },
+    "answer": "e",
+    "answer_text": "Backup on-line em servidor secundário replicado.",
+    "explanation": "Garante continuidade, integridade e não impacta o servidor principal."
+  },
+  {
+    "question": "Qual sequência representa corretamente as afirmações sobre comandos de backup no MySQL?",
+    "options": {
+      "a": "V - F - V - V - V",
+      "b": "F - V - F - F - F",
+      "c": "V - V - V - F - F",
+      "d": "F - V - F - V - F",
+      "e": "V - F - V - F - V"
     },
     "answer": "a",
-    "answer_text": "items",
-    "explanation": "A propriedade items define a lista de opções que aparecerão no DropdownButton."
+    "answer_text": "V - F - V - V - V",
+    "explanation": "Corresponde à compreensão correta sobre backup lógico, estrutura, logs e integridade no MySQL."
   },
   {
-    "question": "O widget DatePicker é usado para:",
+    "question": "Por que se deve realizar backups regulares em banco de dados?",
     "options": {
-      "a": "Selecionar uma data em um calendário",
-      "b": "Inserir texto formatado",
-      "c": "Exibir uma lista rolável",
-      "d": "Selecionar múltiplas opções"
+      "a": "Melhorar o desempenho do banco de dados.",
+      "b": "Facilitar a migração de dados entre servidores.",
+      "c": "Reduzir o uso de espaço em disco.",
+      "d": "Aumentar a velocidade de acesso aos dados.",
+      "e": "Garantir a integridade dos dados em caso de falhas."
+    },
+    "answer": "e",
+    "answer_text": "Garantir a integridade dos dados em caso de falhas.",
+    "explanation": "Backup garante continuidade e recuperação dos dados em situações críticas."
+  },
+  {
+    "question": "Quando a restauração completa do banco de dados é indicada?",
+    "options": {
+      "a": "Quando se deseja restaurar uma tabela específica.",
+      "b": "Quando se deseja restaurar dados de um ponto específico no tempo.",
+      "c": "Quando o banco de dados precisa ser restaurado após uma falha grave.",
+      "d": "Quando se deseja restaurar os dados alterados desde o último backup.",
+      "e": "Quando se deseja restaurar os logs de transações."
+    },
+    "answer": "c",
+    "answer_text": "Quando o banco de dados precisa ser restaurado após uma falha grave.",
+    "explanation": "Falhas graves demandam restauração total da base de dados."
+  },
+  {
+    "question": "Quais comandos no MySQL envolvem operações de backup e recuperação?",
+    "options": {
+      "a": "I, II e III",
+      "b": "II e III apenas",
+      "c": "I e II apenas",
+      "d": "I e III apenas",
+      "e": "II apenas"
     },
     "answer": "a",
-    "answer_text": "Selecionar uma data em um calendário",
-    "explanation": "O DatePicker fornece uma interface de calendário para selecionar datas."
+    "answer_text": "I, II e III",
+    "explanation": "mysqldump exporta, mysql importa, e -u define o usuário para acesso ao banco."
   },
   {
-    "question": "Qual widget permite rolagem de conteúdo em uma única direção?",
+    "question": "Quais afirmativas sobre backups incrementais são verdadeiras?",
     "options": {
-      "a": "Row",
-      "b": "Column",
-      "c": "SingleChildScrollView",
-      "d": "TextFormField"
+      "a": "I e II apenas",
+      "b": "II e III apenas",
+      "c": "III e IV apenas",
+      "d": "I, II e IV apenas",
+      "e": "I, II, III e IV"
+    },
+    "answer": "d",
+    "answer_text": "I, II e IV apenas",
+    "explanation": "Backups incrementais exigem aplicação sequencial, suportam ponto no tempo, e podem ser otimizados com diferenciais."
+  },
+  {
+    "question": "Qual evento representa uma falha humana no gerenciamento de banco de dados?",
+    "options": {
+      "a": "Ataques cibernéticos.",
+      "b": "Atualizações malsucedidas.",
+      "c": "Desastres naturais.",
+      "d": "Exclusão acidental de dados por comando.",
+      "e": "Bugs no software."
+    },
+    "answer": "d",
+    "answer_text": "Exclusão acidental de dados por comando.",
+    "explanation": "É uma falha humana comum que pode ser evitada com boas práticas."
+  },
+  {
+    "question": "Quais são exemplos de rotinas de manutenção em banco de dados?",
+    "options": {
+      "a": "Rotina de limpeza e rotina de rede.",
+      "b": "Rotina de reindexação e rotina de rede.",
+      "c": "Rotina de manutenção de arquivos e rotina de backup.",
+      "d": "Rotina de backup e rotina de criação de novos bancos de dados.",
+      "e": "Rotina de limpeza e rotina de ocupação de espaço em disco."
     },
     "answer": "c",
-    "answer_text": "SingleChildScrollView",
-    "explanation": "SingleChildScrollView permite rolagem vertical ou horizontal do conteúdo."
+    "answer_text": "Rotina de manutenção de arquivos e rotina de backup.",
+    "explanation": "São rotinas essenciais para a integridade e continuidade do banco."
   },
   {
-    "question": "O widget ListView é mais adequado para:",
+    "question": "O que poderia levar um banco a só aceitar leitura de dados?",
     "options": {
-      "a": "Exibir widgets em linha horizontal",
-      "b": "Exibir uma lista rolável de itens",
-      "c": "Organizar widgets em coluna",
-      "d": "Entrada de dados de texto"
-    },
-    "answer": "b",
-    "answer_text": "Exibir uma lista rolável de itens",
-    "explanation": "ListView é usado para listas de itens com rolagem."
-  },
-  {
-    "question": "Qual widget organiza seus filhos em uma linha horizontal?",
-    "options": {
-      "a": "Column",
-      "b": "Row",
-      "c": "ListView",
-      "d": "SingleChildScrollView"
-    },
-    "answer": "b",
-    "answer_text": "Row",
-    "explanation": "O Row organiza seus filhos horizontalmente."
-  },
-  {
-    "question": "O widget Column é usado para:",
-    "options": {
-      "a": "Exibir itens em uma lista rolável",
-      "b": "Organizar widgets verticalmente",
-      "c": "Permitir entrada de texto",
-      "d": "Selecionar datas"
-    },
-    "answer": "b",
-    "answer_text": "Organizar widgets verticalmente",
-    "explanation": "Column organiza widgets filhos verticalmente."
-  },
-  {
-    "question": "Em Dart, qual biblioteca é comumente usada para serialização e deserialização de arquivos?",
-    "options": {
-      "a": "dart:async",
-      "b": "dart:io",
-      "c": "dart:convert",
-      "d": "dart:math"
-    },
-    "answer": "c",
-    "answer_text": "dart:convert",
-    "explanation": "A biblioteca 'dart:convert' contém funções como jsonEncode/jsonDecode."
-  },
-  {
-    "question": "Qual função é usada para converter uma string JSON em um objeto Dart?",
-    "options": {
-      "a": "jsonEncode",
-      "b": "jsonDecode",
-      "c": "toString",
-      "d": "parseJson"
-    },
-    "answer": "b",
-    "answer_text": "jsonDecode",
-    "explanation": "jsonDecode transforma JSON em Map ou List."
-  },
-  {
-    "question": "O que a função jsonEncode faz?",
-    "options": {
-      "a": "Converte um objeto Dart em uma string JSON",
-      "b": "Lê um arquivo de texto",
-      "c": "Converte uma string em um inteiro",
-      "d": "Executa operações assíncronas"
+      "a": "Espaço do banco sem capacidade de expansão.",
+      "b": "Uma manutenção em alguma tabela.",
+      "c": "Uma atualização de sistema.",
+      "d": "Alguma alteração feita pelo usuário.",
+      "e": "Uma manutenção feita pelo programador."
     },
     "answer": "a",
-    "answer_text": "Converte um objeto Dart em uma string JSON",
-    "explanation": "jsonEncode transforma objetos Dart em strings JSON."
+    "answer_text": "Espaço do banco sem capacidade de expansão.",
+    "explanation": "Falta de espaço impede novas gravações e pode forçar modo somente leitura."
   },
   {
-    "question": "Qual palavra-chave em Dart indica que uma função é assíncrona?",
+    "question": "Quais comandos realizam manutenção em tabelas MySQL?",
     "options": {
-      "a": "sync",
-      "b": "async",
-      "c": "await",
-      "d": "future"
-    },
-    "answer": "b",
-    "answer_text": "async",
-    "explanation": "'async' é usada para declarar funções assíncronas."
-  },
-  {
-    "question": "Para que serve a palavra-chave await em Dart?",
-    "options": {
-      "a": "Definir uma função síncrona",
-      "b": "Aguardar a conclusão de uma operação assíncrona",
-      "c": "Criar uma lista de itens",
-      "d": "Serializar dados"
-    },
-    "answer": "b",
-    "answer_text": "Aguardar a conclusão de uma operação assíncrona",
-    "explanation": "'await' pausa a execução até que a Future termine."
-  },
-  {
-    "question": "Qual biblioteca é usada para fazer requisições HTTP em Flutter?",
-    "options": {
-      "a": "dart:io",
-      "b": "http",
-      "c": "dart:async",
-      "d": "shared_preferences"
-    },
-    "answer": "b",
-    "answer_text": "http",
-    "explanation": "A biblioteca http facilita requisições REST em Flutter."
-  },
-  {
-    "question": "Qual método da biblioteca http é usado para obter dados de um servidor?",
-    "options": {
-      "a": "post",
-      "b": "get",
-      "c": "put",
-      "d": "delete"
-    },
-    "answer": "b",
-    "answer_text": "get",
-    "explanation": "http.get é usado para recuperar dados do servidor."
-  },
-  {
-    "question": "O método http.post é usado para:",
-    "options": {
-      "a": "Excluir dados de um servidor",
-      "b": "Atualizar dados existentes",
-      "c": "Enviar dados para um servidor",
-      "d": "Obter dados de um servidor"
+      "a": "Check table, repair table, analyze table.",
+      "b": "Check table, repair table, drop table e analyze table.",
+      "c": "Check table, repair table, optimize table e analyze table.",
+      "d": "Check table, repair table, create table.",
+      "e": "Repair table e analyze table."
     },
     "answer": "c",
-    "answer_text": "Enviar dados para um servidor",
-    "explanation": "http.post envia dados para a API."
+    "answer_text": "Check table, repair table, optimize table e analyze table.",
+    "explanation": "Esses comandos realizam diagnóstico, correção e otimização em tabelas."
   },
   {
-    "question": "Qual método HTTP é usado para atualizar recursos existentes?",
+    "question": "Como realizar manutenção sem afetar o banco em produção?",
     "options": {
-      "a": "get",
-      "b": "post",
-      "c": "put",
-      "d": "delete"
+      "a": "Acessar o banco de dados e efetuar um check no banco.",
+      "b": "Copiar o banco de dados em produção e efetuar sua manutenção.",
+      "c": "Identificar o erro e fazer a manutenção em uma base de testes.",
+      "d": "Identificar o erro e efetuar a manutenção no banco de dados em produção.",
+      "e": "Informar o programador para bloquear a aplicação."
     },
     "answer": "c",
-    "answer_text": "put",
-    "explanation": "PUT atualiza os dados já existentes no servidor."
+    "answer_text": "Identificar o erro e fazer a manutenção em uma base de testes.",
+    "explanation": "Evita riscos ao ambiente de produção e permite testes controlados."
   },
   {
-    "question": "O que o método http.delete faz?",
+    "question": "Como evitar que o ransomware destrua o backup do banco de dados?",
     "options": {
-      "a": "Envia dados para o servidor",
-      "b": "Remove um recurso do servidor",
-      "c": "Obtém dados do servidor",
-      "d": "Atualiza um recurso existente"
+      "a": "Ter o backup do banco de dados em outra partição do disco.",
+      "b": "Efetuar o backup em um HD USB conectado ao host.",
+      "c": "Efetuar o backup dentro do próprio disco.",
+      "d": "Efetuar o backup na nuvem com acesso constante.",
+      "e": "Efetuar backup na nuvem periodicamente, sem manter o acesso disponível."
     },
-    "answer": "b",
-    "answer_text": "Remove um recurso do servidor",
-    "explanation": "DELETE é usado para excluir dados no backend."
-  },
-  {
-    "question": "Qual widget é usado para construir a interface com base no estado de um Future?",
-    "options": {
-      "a": "ListView",
-      "b": "FutureBuilder",
-      "c": "TextField",
-      "d": "DropdownButton"
-    },
-    "answer": "b",
-    "answer_text": "FutureBuilder",
-    "explanation": "FutureBuilder reage ao estado de um Future."
-  },
-  {
-    "question": "Qual propriedade do FutureBuilder define a operação assíncrona a ser monitorada?",
-    "options": {
-      "a": "builder",
-      "b": "future",
-      "c": "initialData",
-      "d": "snapshot"
-    },
-    "answer": "b",
-    "answer_text": "future",
-    "explanation": "A propriedade 'future' define o Future que será monitorado."
-  }
-  ,
-  {
-    "question": "O que a propriedade builder do FutureBuilder faz?",
-    "options": {
-      "a": "Define o Future a ser executado",
-      "b": "Constrói a interface com base no estado do Future",
-      "c": "Armazena dados iniciais",
-      "d": "Serializa dados JSON"
-    },
-    "answer": "b",
-    "answer_text": "Constrói a interface com base no estado do Future",
-    "explanation": "A propriedade builder define como a UI será construída com base nos dados do Future."
-  },
-  {
-    "question": "Qual biblioteca é usada para persistência de dados simples em Flutter?",
-    "options": {
-      "a": "dart:io",
-      "b": "http",
-      "c": "shared_preferences",
-      "d": "dart:convert"
-    },
-    "answer": "c",
-    "answer_text": "shared_preferences",
-    "explanation": "A biblioteca shared_preferences permite salvar dados simples localmente."
-  },
-  {
-    "question": "Como você obtém uma instância de SharedPreferences?",
-    "options": {
-      "a": "SharedPreferences.getInstance()",
-      "b": "SharedPreferences.create()",
-      "c": "SharedPreferences.init()",
-      "d": "SharedPreferences.load()"
-    },
-    "answer": "a",
-    "answer_text": "SharedPreferences.getInstance()",
-    "explanation": "SharedPreferences.getInstance() retorna a instância necessária para acessar os métodos de armazenamento."
-  },
-  {
-    "question": "Qual método do SharedPreferences é usado para salvar um valor booleano?",
-    "options": {
-      "a": "setString",
-      "b": "setInt",
-      "c": "setBool",
-      "d": "setDouble"
-    },
-    "answer": "c",
-    "answer_text": "setBool",
-    "explanation": "O método setBool salva um valor booleano nas preferências."
-  },
-  {
-    "question": "Qual widget é mais adequado para formulários com validação?",
-    "options": {
-      "a": "TextField",
-      "b": "TextFormField",
-      "c": "Checkbox",
-      "d": "Radio"
-    },
-    "answer": "b",
-    "answer_text": "TextFormField",
-    "explanation": "TextFormField tem suporte nativo à validação com a propriedade validator."
-  },
-  {
-    "question": "Qual propriedade do TextField define o tipo de teclado exibido?",
-    "options": {
-      "a": "controller",
-      "b": "keyboardType",
-      "c": "onChanged",
-      "d": "decoration"
-    },
-    "answer": "b",
-    "answer_text": "keyboardType",
-    "explanation": "keyboardType define o tipo de teclado exibido (numérico, texto, etc.)."
-  },
-  {
-    "question": "O widget Radio requer qual propriedade para agrupar opções?",
-    "options": {
-      "a": "groupValue",
-      "b": "value",
-      "c": "onChanged",
-      "d": "items"
-    },
-    "answer": "a",
-    "answer_text": "groupValue",
-    "explanation": "groupValue garante que apenas uma opção seja selecionada entre os radios do mesmo grupo."
-  },
-  {
-    "question": "Qual propriedade do DropdownButton é chamada quando uma opção é selecionada?",
-    "options": {
-      "a": "value",
-      "b": "items",
-      "c": "onChanged",
-      "d": "hint"
-    },
-    "answer": "c",
-    "answer_text": "onChanged",
-    "explanation": "A propriedade onChanged é acionada quando o usuário seleciona uma nova opção no dropdown."
-  },
-  {
-    "question": "O widget DatePicker é geralmente apresentado usando:",
-    "options": {
-      "a": "showDialog",
-      "b": "showDatePicker",
-      "c": "showModalBottomSheet",
-      "d": "Navigator.push"
-    },
-    "answer": "b",
-    "answer_text": "showDatePicker",
-    "explanation": "A função showDatePicker exibe o seletor de data em Flutter."
-  },
-  {
-    "question": "Qual widget evita o overflow de conteúdo em uma tela?",
-    "options": {
-      "a": "Row",
-      "b": "Column",
-      "c": "SingleChildScrollView",
-      "d": "ListView"
-    },
-    "answer": "c",
-    "answer_text": "SingleChildScrollView",
-    "explanation": "SingleChildScrollView permite que o conteúdo seja rolado, evitando overflow."
-  },
-  {
-    "question": "Qual propriedade do ListView define a direção de rolagem?",
-    "options": {
-      "a": "scrollDirection",
-      "b": "itemCount",
-      "c": "children",
-      "d": "padding"
-    },
-    "answer": "a",
-    "answer_text": "scrollDirection",
-    "explanation": "scrollDirection define se a lista será rolada na vertical ou horizontal."
-  },
-  {
-    "question": "O widget Row pode ser combinado com qual widget para evitar overflow?",
-    "options": {
-      "a": "Column",
-      "b": "SingleChildScrollView",
-      "c": "TextField",
-      "d": "Checkbox"
-    },
-    "answer": "b",
-    "answer_text": "SingleChildScrollView",
-    "explanation": "Ao envolver um Row com SingleChildScrollView, o conteúdo pode rolar horizontalmente, evitando overflow."
-  },
-  {
-    "question": "Qual propriedade do Column controla o alinhamento horizontal dos filhos?",
-    "options": {
-      "a": "mainAxisAlignment",
-      "b": "crossAxisAlignment",
-      "c": "children",
-      "d": "scrollDirection"
-    },
-    "answer": "b",
-    "answer_text": "crossAxisAlignment",
-    "explanation": "crossAxisAlignment define o alinhamento horizontal dos widgets dentro do Column."
-  },
-  {
-    "question": "Qual tipo de dado é retornado por jsonDecode?",
-    "options": {
-      "a": "String",
-      "b": "Map ou List",
-      "c": "int",
-      "d": "double"
-    },
-    "answer": "b",
-    "answer_text": "Map ou List",
-    "explanation": "jsonDecode converte a string JSON em uma estrutura Map ou List."
-  },
-  {
-    "question": "Em operações assíncronas, o que Future representa?",
-    "options": {
-      "a": "Um valor disponível imediatamente",
-      "b": "Um valor que estará disponível no futuro",
-      "c": "Uma lista de widgets",
-      "d": "Um arquivo serializado"
-    },
-    "answer": "b",
-    "answer_text": "Um valor que estará disponível no futuro",
-    "explanation": "Um Future representa um valor que será fornecido quando a operação assíncrona for concluída."
-  },
-  {
-    "question": "Qual palavra-chave é usada para esperar o resultado de um Future?",
-    "options": {
-      "a": "async",
-      "b": "await",
-      "c": "then",
-      "d": "sync"
-    },
-    "answer": "b",
-    "answer_text": "await",
-    "explanation": "await pausa a execução até que a Future termine e retorne o valor."
-  },
-  {
-    "question": "Qual método da biblioteca http é usado para enviar dados atualizados ao servidor?",
-    "options": {
-      "a": "get",
-      "b": "post",
-      "c": "put",
-      "d": "delete"
-    },
-    "answer": "c",
-    "answer_text": "put",
-    "explanation": "PUT é usado para atualizar dados em uma API REST."
-  },
-  {
-    "question": "Qual propriedade do FutureBuilder fornece o estado atual do Future?",
-    "options": {
-      "a": "builder",
-      "b": "future",
-      "c": "snapshot",
-      "d": "initialData"
-    },
-    "answer": "c",
-    "answer_text": "snapshot",
-    "explanation": "snapshot contém o estado e os dados atuais do Future."
-  },
-  {
-    "question": "O que snapshot.hasData indica no FutureBuilder?",
-    "options": {
-      "a": "Se o Future foi concluído com erro",
-      "b": "Se o Future está em execução",
-      "c": "Se o Future retornou dados com sucesso",
-      "d": "Se o Future foi cancelado"
-    },
-    "answer": "c",
-    "answer_text": "Se o Future retornou dados com sucesso",
-    "explanation": "snapshot.hasData retorna true se o Future retornou dados válidos."
-  },
-  {
-    "question": "Qual método do SharedPreferences recupera um valor de string?",
-    "options": {
-      "a": "getInt",
-      "b": "getString",
-      "c": "getBool",
-      "d": "getDouble"
-    },
-    "answer": "b",
-    "answer_text": "getString",
-    "explanation": "getString recupera valores do tipo string salvos anteriormente."
-  },
-  {
-    "question": "Qual propriedade do TextFormField é usada para validação?",
-    "options": {
-      "a": "validator",
-      "b": "controller",
-      "c": "onChanged",
-      "d": "keyboardType"
-    },
-    "answer": "a",
-    "answer_text": "validator",
-    "explanation": "A propriedade validator permite definir uma função de validação para os dados de entrada."
-  },
-  {
-    "question": "Qual widget é mais eficiente para listas longas em Flutter?",
-    "options": {
-      "a": "Row",
-      "b": "Column",
-      "c": "ListView.builder",
-      "d": "SingleChildScrollView"
-    },
-    "answer": "c",
-    "answer_text": "ListView.builder",
-    "explanation": "ListView.builder é eficiente pois carrega os itens sob demanda (lazy loading)."
-  },
-  {
-    "question": "Qual método do SharedPreferences remove uma chave?",
-    "options": {
-      "a": "remove",
-      "b": "clear",
-      "c": "delete",
-      "d": "setString"
-    },
-    "answer": "a",
-    "answer_text": "remove",
-    "explanation": "O método remove apaga a chave e seu valor associado do armazenamento local."
-  },
-  {
-    "question": "O que acontece se você usar jsonEncode em um objeto sem suporte?",
-    "options": {
-      "a": "Retorna uma string vazia",
-      "b": "Lança uma exceção",
-      "c": "Converte para null",
-      "d": "Ignora o objeto"
-    },
-    "answer": "b",
-    "answer_text": "Lança uma exceção",
-    "explanation": "Objetos não suportados por padrão causam exceções ao serem codificados."
-  },
-  {
-    "question": "Qual propriedade do http.get define cabeçalhos da requisição?",
-    "options": {
-      "a": "headers",
-      "b": "body",
-      "c": "url",
-      "d": "encoding"
-    },
-    "answer": "a",
-    "answer_text": "headers",
-    "explanation": "headers permite definir informações adicionais como Content-Type e Authorization."
-  },
-  {
-    "question": "Qual método do SharedPreferences limpa todos os dados salvos?",
-    "options": {
-      "a": "remove",
-      "b": "clear",
-      "c": "deleteAll",
-      "d": "reset"
-    },
-    "answer": "b",
-    "answer_text": "clear",
-    "explanation": "O método clear remove todos os pares chave-valor salvos."
-  },
-  {
-    "question": "Qual é o propósito principal do FutureBuilder?",
-    "options": {
-      "a": "Exibir uma lista rolável",
-      "b": "Construir a UI com base no estado de um Future",
-      "c": "Serializar dados JSON",
-      "d": "Armazenar dados localmente"
-    },
-    "answer": "b",
-    "answer_text": "Construir a UI com base no estado de um Future",
-    "explanation": "O FutureBuilder escuta um Future e reconstrói a interface conforme o estado do mesmo."
+    "answer": "e",
+    "answer_text": "Efetuar backup na nuvem periodicamente, sem manter o acesso disponível.",
+    "explanation": "Evita que o ransomware acesse os dados, mantendo o backup seguro."
   }
 ]
